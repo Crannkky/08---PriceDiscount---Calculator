@@ -1,12 +1,12 @@
-import { calcBtnImola } from "./imola.js";
-import { applyDiscImola } from "./imola.js";
+import { calcBtnIml } from "./iml.js";
+import { applyDiscIml } from "./iml.js";
 
-import { calcBtnAtlas } from "./atlas.js";
-import { applyDiscAtlas } from "./atlas.js";
+import { calcBtnAtl } from "./atl.js";
+import { applyDiscAtl } from "./atl.js";
 
-import { calcBtnFlorim } from "./florim.js";
-import { applyDiscFlorim } from "./florim.js";
+import { calcBtnFlo } from "./flo.js";
+import { applyDiscFlo } from "./flo.js";
 
-calcBtnImola.onclick = applyDiscImola;
-calcBtnAtlas.onclick = applyDiscAtlas;
-calcBtnFlorim.onclick = applyDiscFlorim;
+calcBtnIml.onclick = applyDiscIml;
+calcBtnAtl.onclick = applyDiscAtl;
+calcBtnFlo.onclick = applyDiscFlo;
