@@ -6,7 +6,7 @@ export const sellingPriceImola = document.getElementById("selling-price-imola");
 
 export function applyDiscImola() {
   const inputValue = inputPriceImola.value;
-  regularPriceImola.innerText = inputValue;
+  regularPriceImola.innerText = inputValue + "" + "€";
   const disc1 = (50 / 100) * inputValue;
   const disc2 = disc1 - (10 / 100) * disc1;
   const disc3 = disc2 - (10 / 100) * disc2;
@@ -16,6 +16,6 @@ export function applyDiscImola() {
   const sell = disc6 + (45 / 100) * disc6;
   console.log(disc1, disc2, disc3, disc4, disc5, disc6, sell);
 
-  discPriceImola.innerText = Math.ceil(disc6);
-  sellingPriceImola.innerText = Math.ceil(sell);
+  discPriceImola.innerText = Math.ceil(disc6) + "" + "€";
+  sellingPriceImola.innerText = Math.ceil(sell) + "" + "€";
 }

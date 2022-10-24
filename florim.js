@@ -12,10 +12,10 @@ export const sellingPriceFlorim = document.getElementById(
 
 export function applyDiscFlorim() {
   const inputValue = inputPriceFlorim.value;
-  regularPriceFlorim.innerText = inputValue;
+  regularPriceFlorim.innerText = inputValue + "" + "€";
   const disc1 = Math.ceil(inputValue - (68 / 100) * inputValue);
-  const sell = Math.ceil((40 / 100) * disc1 + disc1);
+  const sell = Math.ceil(disc1 + (40 / 100) * disc1);
 
-  discPriceFlorim.innerText = disc1;
-  sellingPriceFlorim.innerText = sell;
+  discPriceFlorim.innerText = disc1 + "" + "€";
+  sellingPriceFlorim.innerText = sell + "" + "€";
 }

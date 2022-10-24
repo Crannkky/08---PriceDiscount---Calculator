@@ -6,10 +6,10 @@ export const sellingPriceAtlas = document.getElementById("selling-price-atlas");
 
 export function applyDiscAtlas() {
   const inputValue = inputPriceAtlas.value;
-  regularPriceAtlas.innerText = inputValue;
+  regularPriceAtlas.innerText = inputValue + "" + "€";
   const disc1 = Math.ceil(inputValue - (55 / 100) * inputValue);
   const disc2 = Math.ceil(disc1 - (19 / 100) * disc1);
-  const sell = Math.ceil((40 / 100) * disc2 + disc2);
-  discPriceAtlas.innerText = disc2;
-  sellingPriceAtlas.innerText = sell;
+  const sell = Math.ceil(disc2 + (40 / 100) * disc2);
+  discPriceAtlas.innerText = disc2 + "" + "€";
+  sellingPriceAtlas.innerText = sell + "" + "€";
 }
