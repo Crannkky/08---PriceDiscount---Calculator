@@ -12,7 +12,8 @@ export function applyDiscImola() {
   const disc3 = (10 / 100) * disc2 - disc2;
   const disc4 = (10 / 100) * disc3 - disc3;
   const disc5 = (10 / 100) * disc4 - disc4;
-  const sell = (40 / 100) * disc5 + Math.ceil(disc5);
+  const disc6 = (5 / 100) * disc5 - disc5;
+  const sell = (40 / 100) * disc6 + Math.ceil(disc6);
 
   discPriceImola.innerText = Math.ceil(disc5);
   sellingPriceImola.innerText = Math.ceil(sell);
